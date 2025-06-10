@@ -5,7 +5,7 @@
 To automate EBS volume snapshot creation across **all AWS regions** for volumes in the **"in-use"** state using AWS Lambda. This project includes launching EC2, static site deployment, AMI operations, volume creation, snapshot automation, SNS notifications, and scheduled execution using EventBridge.
 
 ---
-
+![](https://github.com/gaurav3972/AWS-Lambda-Volume-Backup-Automation-Project/blob/main/IMAGES/lambda%20infrastructure.png)
 ## 📌 Project Description 
 
 * 🔄 Automates backup of all **“in-use” EBS volumes** across **all AWS regions**
@@ -88,7 +88,7 @@ To automate EBS volume snapshot creation across **all AWS regions** for volumes 
 * Click **Actions > Image and templates > Create image**
 * Provide name (e.g., `WebServerAMI`)
 * Click **Create Image**
-
+![](https://github.com/gaurav3972/AWS-Lambda-Volume-Backup-Automation-Project/blob/main/IMAGES/Screenshot%202025-06-11%20001319.png)
 ---
 
 ### 🔹 4. **Copy AMI to Another Region**
