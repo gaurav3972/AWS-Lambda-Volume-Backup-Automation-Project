@@ -1,4 +1,4 @@
-# 🛠️     (With SNS, EventBridge)
+# 🛠️ AWS-Lambda-Volume-Backup-Automation-Project (With SNS, EventBridge)
 
 ## 🎯 Objective:
 
@@ -106,7 +106,7 @@ To automate EBS volume snapshot creation across **all AWS regions** for volumes 
 * Ensure security group and key pair are configured
 
 ---
-
+![](https://github.com/gaurav3972/AWS-Lambda-Volume-Backup-Automation-Project/blob/main/IMAGES/Screenshot%202025-06-11%20001609.png)
 ### 🔹 6. **Create Extra EBS Volumes in Both Regions**
 
 * Go to **EC2 > Elastic Block Store > Volumes**
@@ -114,6 +114,7 @@ To automate EBS volume snapshot creation across **all AWS regions** for volumes 
 * Keep **state** as **Available**
 
 ---
+![](https://github.com/gaurav3972/AWS-Lambda-Volume-Backup-Automation-Project/blob/main/IMAGES/Screenshot%202025-06-10%20235252.png )
 
 ### 🔹 7.  **Create the Lambda Function**
 
@@ -171,9 +172,7 @@ def lambda_handler(event, context):
         'body': json.dumps(snapshots_created)
     }
 ```
-
-> 🔁 Replace `REGION`, `ACCOUNT_ID`, and `TOPIC_NAME` with actual values.
-
+![](https://github.com/gaurav3972/AWS-Lambda-Volume-Backup-Automation-Project/blob/main/IMAGES/Screenshot%202025-06-10%20235048.png)
 ---
 
 ### 🔹 8. **Create SNS Topic and Subscribe**
@@ -185,7 +184,7 @@ def lambda_handler(event, context):
 
    * Enter your email
    * Confirm from inbox
-
+![](https://github.com/gaurav3972/AWS-Lambda-Volume-Backup-Automation-Project/blob/main/IMAGES/Screenshot%202025-06-11%20000856.png)
 ---
 
 ### 🔹 9. **Assign IAM Role to Lambda**
@@ -217,7 +216,7 @@ def lambda_handler(event, context):
 ---
 
 ### 🔹 11. **Schedule Automation with EventBridge**
-
+![](https://github.com/gaurav3972/AWS-Lambda-Volume-Backup-Automation-Project/blob/main/IMAGES/Screenshot%202025-06-11%20000947.png)
 * Go to **Amazon EventBridge > Rules > Create rule**
 * Name: `SnapshotScheduler`
 * Event Source: **Schedule**
@@ -233,7 +232,7 @@ def lambda_handler(event, context):
 * ✅ Notification email sent via **SNS**
 * ✅ EC2 instances created from AMI work in both regions
 * ✅ Volumes created and remain available
-
+![](https://github.com/gaurav3972/AWS-Lambda-Volume-Backup-Automation-Project/blob/main/IMAGES/Screenshot%202025-06-11%20001143.png)
 ---
 
 ## 📦 Project Summary
