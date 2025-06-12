@@ -256,7 +256,7 @@ This project automates the backup of EBS volumes using a **serverless architectu
 The Lambda function is triggered on a **schedule using Amazon EventBridge**, allowing backups to run automatically at defined intervals (e.g., daily). After snapshot creation, **Amazon SNS** sends notifications (e.g., email) to inform administrators about the snapshot status, including volume and region details.
 
 The entire setup requires **no manual intervention**, ensures **cross-region snapshot coverage**, and enhances **disaster recovery** readiness and **data protection** for EC2-based infrastructure.
-
+![](https://github.com/gaurav3972/AWS-Lambda-Volume-Backup-Automation-Project/blob/main/IMAGES/3.png)
 ### ✅ Key Features:
 
 * Multi-region EBS volume scanning
