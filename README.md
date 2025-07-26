@@ -30,7 +30,7 @@ To automate EBS volume snapshot creation across **all AWS regions** for volumes 
 
    * `AmazonEC2FullAccess`
    * `AmazonSNSFullAccess`
-   * (Optional) `CloudWatchLogsFullAccess`
+   * `CloudWatchLogsFullAccess`
 
 5. **SNS Topic** – Created with an email subscription to receive snapshot notifications.
 
