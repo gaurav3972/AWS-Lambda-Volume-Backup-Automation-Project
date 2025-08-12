@@ -26,7 +26,7 @@ To automate EBS volume snapshot creation across **all AWS regions** for volumes 
 
 3. **EC2 Instance** – Amazon Linux 2 with a web server (Apache), key pair, and open ports 22 & 80.
 
-4. **IAM Role for Lambda** – Attach policies:
+4. **IAM Role for Lambda** – Attach policies:-
 
    * `AmazonEC2FullAccess`
    * `AmazonSNSFullAccess`
