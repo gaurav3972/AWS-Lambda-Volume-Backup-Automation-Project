@@ -13,7 +13,7 @@ To automate EBS volume snapshot creation across **all AWS regions** for volumes 
 * 🔍 Lambda scans each region for attached EBS volumes
 * 📸 Creates **snapshots** of each volume
 * 🔔 Sends **SNS notifications** after snapshot creation
-* 🕒 Scheduled with **Amazon EventBridge (CloudWatch Events)** for regular execution
+* 🕒 Scheduled  with **Amazon EventBridge (CloudWatch Events)** for regular execution
 * 🛡️ Ensures **automated, region-wide backup** without manual effort
 
 ---
